@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "HabitForge",
+    "slug": "habitforge",
+    "version": "1.0.0",
+    "sdkVersion": "55.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B0B14"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.zenvikai.habitforge",
+      "infoPlist": {
+        "NSUserNotificationsUsageDescription": "HabitForge uses notifications to remind you of your daily habits.",
+        "UIBackgroundModes": [
+          "fetch",
+          "remote-notification"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B0B14"
+      },
+      "package": "com.zenvikai.habitforge",
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#7C5CFC"
+        }
+      ],
+      "expo-asset",
+      "expo-font",
+      "expo-sharing",
+      "expo-sqlite"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c537361c-8f29-4b74-97d4-8c30778a7efe"
+      }
+    },
+    "owner": "sathvika8"
+  }
+}
